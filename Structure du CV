@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Prénom NOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Prénom NOM</h1>
+            <p>Adresse complète | Téléphone | <a href="mailto:email@example.com">Email</a> | <a href="https://www.linkedin.com">LinkedIn</a></p>
+        </header>
+
+        <section>
+            <h2>Profil</h2>
+            <p>Professionnel de l'assurance qualité avec plus de 5 ans d'expérience dans les secteurs pharmaceutique et des dispositifs médicaux...</p>
+        </section>
+
+        <section>
+            <h2>Expérience Professionnelle</h2>
+
+            <div class="job">
+                <h3>Consultant Caduceum – Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Ingénieur Qualité Opérationnelle</strong> | 11/2022 - 09/2024 (23 mois)</p>
+                <ul>
+                    <li><strong>Validation</strong> des équipements de contrôle, logiciels...</li>
+                    <li>Amélioration des indicateurs qualité</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Consultant Caduceum – Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Support Qualité - Projet FDA UDI</strong> | 05/2022 - 10/2022 (6 mois)</p>
+                <ul>
+                    <li>Implémentation du numéro GTIN sur les instruments destinés au marché US</li>
+                    <li>Support à la production pour modifier les programmes de marquage</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Sanofi, Vertolaye</h3>
+                <p><strong>Alternant en Assurance Qualité</strong> | 2018 - 2021</p>
+                <ul>
+                    <li>Rédaction de documentation qualité</li>
+                    <li>Gestion des déviations et mise en œuvre des CAPA</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Resicare Michelin, Clermont-Ferrand</h3>
+                <p><strong>Stagiaire en Chimie</strong> | 2018</p>
+                <ul>
+                    <li>Analyse des propriétés de résines</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Compétences</h2>
+            <ul>
+                <li><strong>Validation :</strong> Qualification IQ, QO, QP, MSA des équipements et installations</li>
+                <li><strong>Gestion de Projets :</strong> Suivi rigoureux et reporting des actions</li>
+                <li><strong>Assurance Qualité :</strong> Gestion des déviations, CAPA, contrôle qualité</li>
+                <li><strong>Outils :</strong> Microsoft Office, Power Query</li>
+                <li><strong>Langues :</strong> Anglais professionnel</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>Bac +5 Manager des Risques</strong> | 2019 - 2021</li>
+                <li><strong>Licence Animateur Qualité Sécurité Environnement</strong> | 2018 - 2019</li>
+                <li><strong>DUT Chimie, option Matériaux</strong> | 2016 - 2018</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Loisirs</h2>
+            <ul>
+                <li>Lecture</li>
+                <li>Musique</li>
+                <li>Jeux vidéo</li>
+                <li>Rugby (10 ans)</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
