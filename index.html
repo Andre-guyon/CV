@@ -5,6 +5,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Prénom NOM</title>
     <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour le style -->
+    <style>
+        /* Styles pour les boutons de langue */
+        .language-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .language-buttons button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section des boutons pour changer de langue -->
+        <div class="language-buttons">
+            <button onclick="showLanguage('fr')">Français</button>
+            <button onclick="showLanguage('en')">English</button>
+        </div>
+
+        <!-- Section d'en-tête contenant les informations personnelles -->
+        <header>
+            <h1 id="header-name">André GUYON</h1>
+            <p id="header-contact"> 50 Route d'Aubiere, 63110 BEAUMONT | 06 72 16 21 18 |  <a href="mailto:guyon4dut@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/ANDRÉ-GUYON">LinkedIn</a></p>
+        </header>
+
+        <!-- Section Profil en français -->
+        <section id="profile-fr">
+            <h2>Profil</h2>
+            <p>Professionnel de l'assurance qualité avec plus de 5 ans d'expérience dans les secteurs pharmaceutique et des dispositifs médicaux. Ayant travaillé pour des leaders comme Sanofi et Stryker, j'ai acquis une expertise approfondie dans la validation, la gestion des non-conformités, et l'amélioration continue des processus qualité. Je suis à la recherche de nouvelles opportunités pour développer mes compétences en assurance qualité et gestion de projets.</p>
+        </section>
+
+        <!-- Section Profil en anglais -->
+        <section id="profile-en" style="display: none;">
+            <h2>Profile</h2>
+            <p>Quality assurance professional with over 5 years of experience in the pharmaceutical and medical device sectors. Having worked for leaders like Sanofi and Stryker, I have gained in-depth expertise in validation, non-conformance management, and continuous process improvement. I am seeking new opportunities to further develop my skills in quality assurance and project management.</p>
+        </section>
+
+        <!-- Section Expérience Professionnelle en français -->
+        <section id="experience-fr">
+            <h2>Expérience Professionnelle</h2>
+            <div class="job">
+                <h3>Consultant Caduceum – Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Ingénieur Qualité Opérationnelle</strong> | 11/2022 - 09/2024 (23 mois)</p>
+                <ul>
+                    <li><strong>Validation</strong> des équipements de contrôle, logiciels, équipements de production, bâtiments et installations :
+                        <ul>
+                            <li>Qualification d’installation (IQ), Qualification opérationnelle (QO), Qualification des performances (QP)</li>
+                            <li>Analyse des systèmes de mesure (MSA)</li>
+                            <li>Validation des nouveaux équipements de contrôle et d'usinage</li>
+                        </ul>
+                    </li>
+                    <li><strong>Support qualité</strong> :
+                        <ul>
+                            <li>Amélioration des indicateurs qualité</li>
+                            <li>Création d’un fichier de suivi des événements non conformes avec mise à jour quotidienne via Power Query</li>
+                            <li>Gestion des non-conformités et des CAPA</li>
+                            <li>Extraction et suivi des données pour les indicateurs qualité</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Consultant Caduceum – Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Support Qualité - Projet FDA UDI</strong> | 05/2022 - 10/2022 (6 mois)</p>
+                <ul>
+                    <li><strong>Implémentation du numéro GTIN</strong> (Global Trade Identification Number) sur les instruments destinés au marché américain :
+                        <ul>
+                            <li>Collaboration avec les équipes techniques, supply chain et production pour intégrer le GTIN dans les ordres de fabrication</li>
+                            <li>Contrôle visuel de la conformité du marquage GTIN en production</li>
+                            <li>Support à la production pour modifier les programmes de marquage</li>
+                            <li>Définition et mise à jour de trackers pour suivre l’avancement de 800 références</li>
+                            <li>Suivi quotidien des actions et reporting au chef de projet et aux équipes concernées</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Sanofi, Vertolaye</h3>
+                <p><strong>Alternant en Assurance Qualité</strong> | 2018 - 2021</p>
+                <ul>
+                    <li>Rédaction de <strong>documentation qualité</strong> : protocoles, rapports de validation, évaluation des risques, plans annuels</li>
+                    <li>Gestion des déviations et mise en œuvre des <strong>CAPA</strong> (Corrective and Preventive Action)</li>
+                    <li>Suivi des <strong>Change Control</strong>, mise en place de management visuel, rédaction d'études d'impact de nettoyage</li>
+                    <li>Participation aux audits et gestion des réponses aux inspections</li>
+                    <li>Animation de réunions et résolution de problèmes en collaboration avec différents services</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Resicare Michelin, Clermont-Ferrand</h3>
+                <p><strong>Stagiaire en Chimie</strong> | 2018</p>
+                <ul>
+                    <li>Analyse des propriétés de résines : tests de viscosité, traction, pH</li>
+                    <li>Rédaction d'une synthèse des résultats d'étude</li>
+                    <li>Gestion autonome d'un projet de développement de nouveau produit</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Experience in English -->
+        <section id="experience-en" style="display: none;">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>Consultant Caduceum – Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Operational Quality Engineer</strong> | 11/2022 - 09/2024 (23 months)</p>
+                <ul>
+                    <li><strong>Validation</strong> of control equipment, software, production equipment, buildings, and facilities:
+                        <ul>
+                            <li>Installation Qualification (IQ), Operational Qualification (OQ), Performance Qualification (PQ)</li>
+                            <li>Measurement System Analysis (MSA)</li>
+                            <li>Validation of new control and machining equipment</li>
+                        </ul>
+                    </li>
+                    <li><strong>Quality Support</strong>:
+                        <ul>
+                            <li>Improvement of quality indicators</li>
+                            <li>Creation of a non-conformance tracking file with daily updates via Power Query</li>
+                            <li>Management of non-conformities and CAPA</li>
+                            <li>Extraction and tracking of data for quality indicators</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Consultant Caduceum – Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Quality Support - FDA UDI Project</strong> | 05/2022 - 10/2022 (6 months)</p>
+                <ul>
+                    <li><strong>GTIN Number Implementation</strong> on instruments for the US market:
+                        <ul>
+                            <li>Collaboration with technical teams, supply chain, and production to integrate GTIN into manufacturing orders</li>
+                            <li>Visual inspection of GTIN marking compliance in production</li>
+                            <li>Support for production in modifying marking programs</li>
+                            <li>Definition and update of trackers to monitor progress of 800 references</li>
+                            <li>Daily tracking of actions and reporting to project manager and concerned teams</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Sanofi, Vertolaye</h3>
+                <p><strong>Quality Assurance Intern</strong> | 2018 - 2021</p>
+                <ul>
+                    <li>Drafting of <strong>quality documentation</strong>: protocols, validation reports, risk assessments, annual plans</li>
+                    <li>Management of deviations and implementation of <strong>CAPA</strong> (Corrective and Preventive Actions)</li>
+                    <li>Change Control monitoring, implementation of visual management, drafting of cleaning impact studies</li>
+                    <li>Participation in audits and handling responses to inspections</li>
+                    <li>Leading meetings and problem-solving in collaboration with various departments</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Resicare Michelin, Clermont-Ferrand</h3>
+                <p><strong>Chemistry Intern</strong> | 2018</p>
+                <ul>
+                    <li>Analysis of resin properties: viscosity tests, tensile tests, pH tests</li>
+                    <li>Writing a summary of study results</li>
+                    <li>Autonomous management of a new product development project</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Compétences en français -->
+        <section id="skills-fr">
+            <h2>Compétences</h2>
+            <ul>
+                <li><strong>Validation :</strong> Qualification IQ, QO, QP, MSA des équipements et installations</li>
+                <li><strong>Gestion de Projets :</strong> Suivi rigoureux et reporting des actions</li>
+                <li><strong>Assurance Qualité :</strong> Gestion des déviations, CAPA, contrôle qualité</li>
+                <li><strong>Normes et Référentiels :</strong> ISO 9000, EN 9100, ISO 14000, 22301, 31000, Guides ICH, APIC</li>
+                <li><strong>Outils :</strong> Microsoft Office, Power Query</li>
+                <li><strong>Langues :</strong> Anglais professionnel</li>
+            </ul>
+        </section>
+
+        <!-- Section Skills in English -->
+        <section id="skills-en" style="display: none;">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Validation:</strong> IQ, OQ, PQ Qualification, MSA of equipment and facilities</li>
+                <li><strong>Project Management:</strong> Rigorous tracking and reporting of actions</li>
+                <li><strong>Quality Assurance:</strong> Management of deviations, CAPA, quality control</li>
+                <li><strong>Standards and Guidelines:</strong> ISO 9000, EN 9100, ISO 14000, 22301, 31000, ICH Guidelines, APIC</li>
+                <li><strong>Tools:</strong> Microsoft Office, Power Query</li>
+                <li><strong>Languages:</strong> Professional English</li>
+            </ul>
+        </section>
+
+        <!-- Section Formation en français -->
+        <section id="education-fr">
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>Bac +5 Manager des Risques</strong> | 2019 - 2021</li>
+                <li><strong>Licence Animateur Qualité Sécurité Environnement</strong> | 2018 - 2019</li>
+                <li><strong>DUT Chimie, option Matériaux</strong> | 2016 - 2018</li>
+            </ul>
+        </section>
+
+        <!-- Section Education in English -->
+        <section id="education-en" style="display: none;">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bac +5 Risk Management</strong> | 2019 - 2021</li>
+                <li><strong>Quality, Safety, Environment Manager Licence</strong> | 2018 - 2019</li>
+                <li><strong>DUT Chemistry, Materials Option</strong> | 2016 - 2018</li>
+            </ul>
+        </section>
+
+        <!-- Section Loisirs en français -->
+        <section id="hobbies-fr">
+            <h2>Loisirs</h2>
+            <ul>
+                <li>Lecture</li>
+                <li>Musique</li>
+                <li>Jeux vidéo</li>
+                <li>Rugby (10 ans)</li>
+            </ul>
+        </section>
+
+        <!-- Section Hobbies in English -->
+        <section id="hobbies-en" style="display: none;">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Music</li>
+                <li>Video Games</li>
+                <li>Rugby (10 years)</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <script>
+        // Fonction pour afficher la langue sélectionnée
+        function showLanguage(language) {
+            // Cache toutes les sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Affiche les sections correspondant à la langue sélectionnée
+            document.querySelectorAll(`#${language}-fr, #${language}-en`).forEach(section => {
+                section.style.display = 'block';
+            });
+        }
+
+        // Afficher le contenu en français par défaut
+        showLanguage('fr');
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Prénom NOM</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour le style -->
 </head>
 <body>
 
@@ -12,7 +281,7 @@
         <!-- Section d'en-tête contenant les informations personnelles -->
         <header>
             <h1>André Guyon</h1>
-            <p>50 ROUTE D'AUBIERE, 63110 BEAUMONT | 06 72 16 21 18 | <a href="guyon4dut@yahoo.com">Email</a> | <a href="https://www.linkedin.com/IN/ANDRÉ-GUYON">LinkedIn</a></p>
+            <p>50 Route d'Aubiere, 63110 BEAUMONT | 06 72 16 21 18 |  <a href="mailto:guyon4dut@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/ANDRÉ-GUYON">LinkedIn</a></p>
         </header>
 
         <!-- Section Profil -->
