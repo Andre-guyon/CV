@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choisissez votre langue</title>
+    <title>CV - Choose Language</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
-        .language-buttons {
-            margin-bottom: 20px;
-        }
-        .language-buttons button {
-            font-size: 20px;
-            padding: 15px 30px;
-            margin: 0 10px;
-            cursor: pointer;
+        .photo {
+            display: block;
+            margin: 20px auto;
+            width: 150px; /* Adjust the size as needed */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
-    <div class="language-buttons">
-        <button onclick="window.location.href='cv-fr.html'">Français</button>
-        <button onclick="window.location.href='cv-en.html'">English</button>
-    </div>
+    <div class="container">
+        <header>
+            <h1>Choose Your CV Language</h1>
+        </header>
 
-    <p>Veuillez sélectionner votre langue préférée pour afficher le CV. / Please select your preferred language to display the CV.</p>
+        <div class="language-buttons">
+            <button onclick="window.location.href='cv-fr.html'">Français</button>
+            <button onclick="window.location.href='cv-en.html'">English</button>
+        </div>
+
+        <section>
+            <h2>My Photo</h2>
+            <img src="images/photo.jpg" alt="Photo de Prénom NOM" class="photo">
+        </section>
+
+    </div>
 
 </body>
 </html>
