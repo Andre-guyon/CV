@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Prénom NOM</title>
+    <title>CV - André GUYON</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,6 +55,27 @@
         section h2 {
             margin-top: 20px;
         }
+
+        /* Print styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 100%;
+                margin: 0;
+            }
+            .photo {
+                width: 100px; /* Adjust size for printing */
+            }
+            .print-button {
+                display: none; /* Hide print button when printing */
+            }
+            header, section {
+                page-break-inside: avoid;
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,7 +89,7 @@
         <!-- New section for the photo -->
         <section>
             <h2>Ma Photo</h2>
-            <img src="image.png" alt="Photo de Prénom NOM" class="photo">
+            <img src="image.png" alt="Photo de André GUYON" class="photo">
         </section>
 
         <div class="language-buttons">
@@ -141,22 +162,4 @@
             <h2>Formation</h2>
             <ul>
                 <li><strong>Bac +5 Manager des Risques</strong> | 2019 - 2021</li>
-                <li><strong>Licence Animateur Qualité Sécurité Environnement</strong> | 2018 - 2019</li>
-                <li><strong>DUT Chimie, option Matériaux</strong> | 2016 - 2018</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Loisirs</h2>
-            <ul>
-                <li>Lecture</li>
-                <li>Écoute de la musique</li>
-                <li>Rugby (10 ans)</li>
-            </ul>
-        </section>
-
-    </div>
-
-</body>
-</html>
-
+                <li><strong>Licence Animate
