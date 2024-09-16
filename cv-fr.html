@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - André GUYON</title>
+    <title>CV - Prénom NOM</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,9 +14,27 @@
         }
         header {
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         header h1 {
             margin: 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            text-align: left;
         }
         .language-buttons {
             text-align: center;
@@ -42,39 +60,8 @@
         ul li {
             margin-bottom: 10px;
         }
-
-        /* New styles for photo */
-        .photo {
-            display: block;
-            margin: 20px auto;
-            width: 150px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
         section h2 {
             margin-top: 20px;
-        }
-
-        /* Print styles */
-        @media print {
-            body {
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                width: 100%;
-                margin: 0;
-            }
-            .photo {
-                width: 100px; /* Adjust size for printing */
-            }
-            .print-button {
-                display: none; /* Hide print button when printing */
-            }
-            header, section {
-                page-break-inside: avoid;
-            }
         }
     </style>
 </head>
@@ -82,15 +69,14 @@
 
     <div class="container">
         <header>
-            <h1>André GUYON</h1>
-            <p>50 Route d'Aubiere, 63110 BEAUMONT | 06 72 16 21 18 |  <a href="mailto:guyon4dut@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/ANDRÉ-GUYON">LinkedIn</a></p>
+            <img src="image.png" alt="Photo de Prénom NOM" class="photo">
+            <div class="header-content">
+                <div>
+                    <h1>André GUYON</h1>
+                    <p>50 Route d'Aubiere, 63110 BEAUMONT | 06 72 16 21 18 |  <a href="mailto:guyon4dut@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/ANDRÉ-GUYON">LinkedIn</a></p>
+                </div>
+            </div>
         </header>
-
-        <!-- New section for the photo -->
-        <section>
-            <h2>Ma Photo</h2>
-            <img src="image.png" alt="Photo de André GUYON" class="photo">
-        </section>
 
         <div class="language-buttons">
             <button onclick="window.location.href='cv-en.html'">English</button>
@@ -162,4 +148,21 @@
             <h2>Formation</h2>
             <ul>
                 <li><strong>Bac +5 Manager des Risques</strong> | 2019 - 2021</li>
-                <li><strong>Licence Animate
+                <li><strong>Licence Animateur Qualité Sécurité Environnement</strong> | 2018 - 2019</li>
+                <li><strong>DUT Chimie, option Matériaux</strong> | 2016 - 2018</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Loisirs</h2>
+            <ul>
+                <li>Lecture</li>
+                <li>Écoute de la musique</li>
+                <li>Rugby (10 ans)</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
