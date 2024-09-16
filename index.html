@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Choose Language</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CV - Prénom NOM</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
         }
-
         .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: auto;
         }
-
+        header {
+            text-align: center;
+        }
         header h1 {
+            margin: 0;
+        }
+        .language-buttons {
+            text-align: center;
             margin-bottom: 20px;
         }
-
         .language-buttons button {
-            margin: 10px;
-            padding: 10px 20px;
             font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 5px;
             cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            transition: background-color 0.3s;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
         }
 
-        .language-buttons button:hover {
-            background-color: #0056b3;
-        }
-
+        /* New styles for photo */
         .photo {
             display: block;
             margin: 20px auto;
@@ -61,17 +61,98 @@
 
     <div class="container">
         <header>
-            <h1>Choose Your CV Language</h1>
+            <h1>André GUYON</h1>
+            <p>50 Route d'Aubiere, 63110 BEAUMONT | 06 72 16 21 18 |  <a href="mailto:guyon4dut@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/ANDRÉ-GUYON">LinkedIn</a></p>
         </header>
 
+        <!-- New section for the photo -->
+        <section>
+            <h2>Ma Photo</h2>
+            <img src="image.png" alt="Photo de Prénom NOM" class="photo">
+        </section>
+
         <div class="language-buttons">
-            <button onclick="window.location.href='cv-fr.html'">Français</button>
             <button onclick="window.location.href='cv-en.html'">English</button>
+            <button onclick="window.location.href='cv-fr.html'">Français</button>
         </div>
 
         <section>
-            <h2>My Photo</h2>
-            <img src="image.png" alt="Photo de Prénom NOM" class="photo">
+            <h2>Profil</h2>
+            <p>Professionnel de l'assurance qualité avec plus de 5 ans d'expérience dans les secteurs pharmaceutique et des dispositifs médicaux. Ayant travaillé pour des leaders comme Sanofi et Stryker, j'ai acquis une expertise approfondie dans la validation, la gestion des non-conformités, et l'amélioration continue des processus qualité. Je suis à la recherche de nouvelles opportunités pour développer mes compétences en assurance qualité et gestion de projets.</p>
+        </section>
+
+        <section>
+            <h2>Expérience Professionnelle</h2>
+            <div class="job">
+                <h3>Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Ingénieur Qualité Opérationnelle</strong> | 11/2022 - 09/2024</p>
+                <ul>
+                    <li>Validation des équipements de contrôle, logiciels, équipements de production, bâtiments et installations</li>
+                    <li>Amélioration des indicateurs qualité, création d'un fichier de suivi des évènements non conformes</li>
+                    <li>Gestion des non-conformités et des CAPA (Corrective and Preventive Actions)</li>
+                    <li>Qualification IQ, QO, QP, MSA des équipements et installations</li>
+                    <li>Mise à jour quotidienne avec Power Query et extraction des données pour le suivi des indicateurs</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Stryker, Montbonnot-Saint-Martin</h3>
+                <p><strong>Support Qualité - Projet FDA UDI</strong> | 05/2022 - 10/2022</p>
+                <ul>
+                    <li>Support à la modification des ordres de fabrication pour intégrer le GTIN</li>
+                    <li>Vérification de la conformité du marquage GTIN en production</li>
+                    <li>Support à la définition et à la mise à jour de trackers pour le suivi de l’avancement (800 références)</li>
+                    <li>Reporting au chef de projet et aux équipes concernées</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Sanofi, Vertolaye</h3>
+                <p><strong>Alternante en Assurance Qualité</strong> | 2018 - 2021</p>
+                <ul>
+                    <li>Rédaction de documentation qualité : protocoles et rapports de validation, Risk assessment, plan annuel</li>
+                    <li>Gestion des déviations : ouverture et gestion des non-conformités, évaluation de l’impact qualité, mise en place et suivi des CAPA</li>
+                    <li>Suivi de Change Control, mise en place d'un management visuel, rédaction de travaux sur l'impact nettoyage</li>
+                    <li>Contribution aux audits et réponses aux inspections, animation de réunions, résolution de problèmes</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Resicare Michelin, Clermont-Ferrand</h3>
+                <p><strong>Stagiaire en Chimie</strong> | 2018</p>
+                <ul>
+                    <li>Analyse des propriétés des résines : tests de viscosité, tests de traction, tests de pH</li>
+                    <li>Rédaction d'une étude de synthèse des résultats</li>
+                    <li>Gestion autonome d'un projet de développement d'un nouveau produit</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Compétences</h2>
+            <ul>
+                <li><strong>Validation :</strong> Qualification IQ, QO, QP des équipements et installations</li>
+                <li><strong>Gestion de Projets :</strong> Suivi rigoureux et reporting des actions</li>
+                <li><strong>Assurance Qualité :</strong> Gestion des déviations, CAPA, contrôle qualité</li>
+                <li><strong>Normes et Référentiels :</strong> ISO 9000, EN 9100, ISO 14000, 22301, 31000, Guides ICH, APIC</li>
+                <li><strong>Outils :</strong> Microsoft Office, Power Query</li>
+                <li><strong>Langues :</strong> Anglais professionnel</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>Bac +5 Manager des Risques</strong> | 2019 - 2021</li>
+                <li><strong>Licence Animateur Qualité Sécurité Environnement</strong> | 2018 - 2019</li>
+                <li><strong>DUT Chimie, option Matériaux</strong> | 2016 - 2018</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Loisirs</h2>
+            <ul>
+                <li>Lecture</li>
+                <li>Écoute de la musique</li>
+                <li>Rugby (10 ans)</li>
+            </ul>
         </section>
 
     </div>
