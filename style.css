@@ -1,69 +1,68 @@
 /* Style pour le CV */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Police de caractère pour le texte */
+    line-height: 1.6; /* Espacement entre les lignes pour la lisibilité */
+    margin: 0; /* Supprimer les marges par défaut */
+    padding: 0; /* Supprimer le padding par défaut */
+    background-color: #f4f4f4; /* Couleur de fond générale */
 }
 
 .container {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largeur de la zone de contenu */
+    margin: 20px auto; /* Marge pour centrer le contenu */
+    background: white; /* Couleur de fond du CV */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Centrer le texte de l'en-tête */
+    margin-bottom: 20px; /* Marge inférieure pour l'espace */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    margin: 0; /* Supprimer la marge par défaut */
+    font-size: 2.5em; /* Taille de la police pour le nom */
 }
 
 header p {
-    margin: 5px 0;
+    margin: 5px 0; /* Espacement pour les informations de contact */
 }
 
 header a {
-    color: #3498db;
-    text-decoration: none;
+    color: #3498db; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement des liens */
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Marge inférieure pour chaque section */
 }
 
 section h2 {
-    color: #3498db;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    color: #3498db; /* Couleur du titre des sections */
+    border-bottom: 2px solid #3498db; /* Bordure sous le titre */
+    padding-bottom: 5px; /* Espacement sous le titre */
+    margin-bottom: 10px; /* Marge inférieure pour l'espace */
 }
 
 .job h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
+    margin: 0; /* Supprimer la marge par défaut */
+    font-size: 1.2em; /* Taille de la police pour les titres des emplois */
+    color: #333; /* Couleur du texte des titres des emplois */
 }
 
 .job p {
-    margin: 5px 0;
-    font-style: italic;
+    margin: 5px 0; /* Espacement pour les dates des emplois */
+    font-style: italic; /* Style italique pour les dates */
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin: 0; /* Supprimer la marge par défaut */
+    padding: 0; /* Supprimer le padding par défaut */
+    list-style-type: none; /* Supprimer les puces des listes */
 }
 
 ul li {
-    margin: 5px 0;
+    margin: 5px 0; /* Espacement entre les éléments de la liste */
 }
-
